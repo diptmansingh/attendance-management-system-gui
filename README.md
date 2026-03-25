@@ -11,6 +11,12 @@ The system features two distinct portals: a Student Dashboard for checking atten
 * **Faculty Admin Panel:** A dedicated interface for faculty to select courses, choose dates, and mark attendance quickly by double-clicking rows (toggling Present/Absent).
 * **Excel Backend:** Data is stored in `attendance_data.xlsx`, making the database highly portable, easily auditable, and simple to back up.
 
+## Screenshots
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/093c0b46-870d-4194-b807-f0d032050489" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c0219922-9374-40f4-8a10-6e81e2c5d19d" />
+
+
+
 ## Prerequisites
 * Python 3.x installed on your machine.
 * Standard Python libraries: `tkinter` (usually included with standard Python installations).
