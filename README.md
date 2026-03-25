@@ -13,36 +13,39 @@ The system features two distinct portals: a Student Dashboard for checking atten
 
 ## Prerequisites
 * Python 3.x installed on your machine.
-* Standard Python libraries: `tkinter` (usually included with Python).
+* Standard Python libraries: `tkinter` (usually included with standard Python installations).
 
 ## Setup and Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/diptmansingh/your-repo-name.git](https://github.com/diptmansingh/your-repo-name.git)
-   cd your-repo-name
+   git clone [https://github.com/diptmansingh/attendance-management-system-gui.git](https://github.com/diptmansingh/attendance-management-system-gui.git)
+   cd attendance-management-system-gui
    ```
 
 2. **Install required dependencies:**
-   It is recommended to use a virtual environment. Install the required pandas and openpyxl libraries using:
+   It is recommended to use a virtual environment. Install the required `pandas` and `openpyxl` libraries using:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Database Configuration (Crucial Step):**
-   The application requires an Excel file named `attendance_data.xlsx` in the root directory. It must contain the following structure:
-   * A sheet named exactly **`Course_Details`** with columns: `Course_Code`, `Sheet_Tab_Name`, and `Minimum_Percentage`.
-   * Individual sheets corresponding to the `Sheet_Tab_Name` values. These sheets must contain at least two columns: `Enrollment_Number` and `Student_Name`. 
+3. **Database Initialization (Run this first!):**
+   The application requires a specifically structured Excel file (`attendance_data.xlsx`) to act as its database. Run the included generator script to instantly create a working template populated with sample courses and students:
+   ```bash
+   python generate_template.py
+   ```
 
 4. **Run the Application:**
+   Once the Excel database is generated, you can launch the main GUI:
    ```bash
    python ams.py
    ```
+   *(To test the student dashboard immediately, try entering the sample roll number: **ENR001**)*
 
 ## Future Enhancements
-* **Authentication:** Add actual password protection to the Faculty Admin Panel.
-* **Data Visualizations:** Integrate `matplotlib` to show attendance trends graphically.
-* **Automated Excel Generation:** Add a startup script that automatically generates a blank template of `attendance_data.xlsx` if the file doesn't already exist.
+* **Authentication:** Add password protection to the Faculty Admin Panel to prevent unauthorized access.
+* **Data Visualizations:** Integrate `matplotlib` to show attendance trends graphically over the semester.
+* **Automated Excel Generation:** Add a startup script that automatically generates a blank template of `attendance_data.xlsx` natively if the file doesn't already exist on the user's machine.
 
 ---
 *Developed with Python, Tkinter, and Pandas.*
