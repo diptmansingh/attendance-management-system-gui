@@ -19,7 +19,7 @@ The system features two distinct portals: a Student Dashboard for checking atten
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/diptmansingh/attendance-management-system-gui.git](https://github.com/diptmansingh/attendance-management-system-gui.git)
+   git clone https://github.com/diptmansingh/attendance-management-system-gui.git
    cd attendance-management-system-gui
    ```
 
